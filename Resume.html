@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mounish DS – Resume</title>
+  <style>
+    @page {
+      size: Letter;
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: "Digits";
+      src: local("Times New Roman"), local("TimesNewRomanPSMT"), local("Times");
+      unicode-range: U+0030-0039;
+      /* only 0-9 */
+    }
+
+    :root {
+      --ink: #1a1a1a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e9e9e9;
+      color: var(--ink);
+      font-family: "Digits", Georgia, "Times New Roman", serif;
+      font-size: 10pt;
+      line-height: 1.25;
+    }
+
+    .page {
+      position: relative;
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      background: #fff;
+      padding: 0.5in 0.5in;
+      border: 1.5px solid var(--ink);
+      outline: 1px solid var(--ink);
+      outline-offset: -0.18in;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+      }
+    }
+
+    /* ---------- header ---------- */
+    header {
+      text-align: center;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 4px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 22pt;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    .contact {
+      font-size: 9pt;
+      line-height: 1.45;
+    }
+
+    .contact span.item {
+      white-space: nowrap;
+    }
+
+    .contact .sep {
+      margin: 0 8px;
+    }
+
+    .contact svg {
+      width: 10px;
+      height: 10px;
+      vertical-align: -1px;
+      margin-right: 4px;
+      fill: var(--ink);
+    }
+
+    a {
+      color: var(--ink);
+    }
+
+    /* ---------- photo (top-right) ---------- */
+    .photo {
+      position: absolute;
+      top: 0.5in;
+      right: 0.5in;
+      width: 0.95in;
+      height: 1.15in;
+      object-fit: cover;
+      background: #f2f2f2;
+    }
+
+    /* ---------- sections ---------- */
+    h2 {
+      margin: 9px 0 3px;
+      padding-bottom: 1px;
+      font-size: 10.5pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .row.sub {
+      font-style: italic;
+    }
+
+    ul {
+      margin: 2px 0 0;
+      padding-left: 14px;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin: 1px 0;
+    }
+
+    li::before {
+      content: "\25CF";
+      position: absolute;
+      left: -13px;
+      font-size: 6.5pt;
+      top: 2px;
+    }
+
+    .title {
+      margin-top: 5px;
+    }
+
+    p {
+      margin: 1px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="page">
+
+    <!-- PHOTO: put your image file next to this HTML as photo.jpg (or change src) -->
+    <img class="photo" src="Mounish Image.jpeg" alt="Photo of Mounish DS"
+      onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 90 110%27%3E%3Crect width=%2790%27 height=%27110%27 fill=%27%23f2f2f2%27/%3E%3Ccircle cx=%2745%27 cy=%2742%27 r=%2719%27 fill=%27%23bbb%27/%3E%3Cpath d=%27M8 110c0-27 17-42 37-42s37 15 37 42z%27 fill=%27%23bbb%27/%3E%3C/svg%3E'">
+
+    <header>
+      <h1>MOUNISH DS</h1>
+      <div class="contact">
+        <span class="item"><svg>
+
+          </svg>Phone : +91-7975858095</span><span class="sep">|</span>
+        <span class="item"><svg>
+
+          </svg><a href="mailto:mounishds4@gmail.com">mounishds4@gmail.com</a></span><span class="sep">|</span>
+        <span class="item"><svg>
+
+          </svg>Bengaluru, Karnataka, India</span><br>
+        <span class="item"><svg>
+
+          </svg><a href="https://www.linkedin.com/in/mounish-d-s-b97aa1320">linkedin.com/in/mounishds</a></span><span
+          class="sep">|</span>
+        <span class="item"><svg>
+
+          </svg><a href="https://github.com/Mounish-DS">github.com/Mounish-DS</a></span>
+      </div>
+    </header>
+
+    <h2>Education</h2>
+    <div class="row"><strong>Bangalore Institute of Technology</strong><span>Bengaluru, Karnataka, India</span></div>
+    <div class="row sub"><span>Bachelor of Engineering – Computer Science &amp; Engineering</span><span>2024 –
+        2028</span></div>
+    <ul>
+      <li><strong>CGPA : 8.85</strong> | Affiliated to VTU; NBA &amp; NAAC A+ Accredited</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python, C, SQL</li>
+      <li><strong>Frontend Development:</strong> HTML , CSS , React</li>
+      <li><strong>Core Conepts :</strong> Data Structures &amp; Algorithms, OOP, DBMS, Computer Networks, Operating
+        Systems</li>
+      <li><strong>Backend and APIs :</strong> REST APIs , API Integration</li>
+      <li><strong>Data &amp; Visualization:</strong> NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn</li>
+      <li><strong>Database:</strong> MySQL, Firestore</li>
+      <li><strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code, Vercel</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <div class="title"><strong>Neurolens AI</strong> — AI-Powered Mental Wellness SaaS Platform <a
+        href="https://neurolens-ai-three.vercel.app/"><strong>Link</strong></a></div>
+    <ul>
+      <li>Developed a full-stack AI-powered mental wellness platform using Next.js 14 App Router and Firebase.</li>
+      <li>Integrated Groq's LLaMA 3 model to provide real-time AI chatbot support for mental wellness assistance.</li>
+      <li>Implemented real-time mood tracking and personalized user onboarding for an enhanced user experience.</li>
+      <li>Integrated Stripe for secure subscription payments and Resend for automated transactional email workflows.
+      </li>
+      <li>Built a responsive and scalable interface using Tailwind CSS with Firebase Authentication and Firestore for
+        secure user management and data storage.</li>
+    </ul>
+    <div class="title"><strong>TraceAlgo</strong> | React, Vite, JavaScript, HTML, CSS <a
+        href="https://trace-algo.vercel.app/"><strong>Link</strong></a></div>
+    <ul>
+      <li>Developed an interactive algorithm visualizer featuring Sorting (Bubble, Selection, Insertion, Merge, Quick),
+        Searching (Linear, Binary), and Graph Traversal (BFS, DFS) with real-time step-by-step animations,
+        play/pause/reset controls, speed adjustment, and complexity analysis.</li>
+      <li>Built custom input support allowing users to visualize algorithms on their own arrays and click-drawn graphs
+        instead of predefined data. Implemented generator-based animation logic for smooth frame-by-frame execution,
+        reusable React components, responsive UI, and dark mode.</li>
+    </ul>
+
+    <h2>Hackathons &amp; Competitions</h2>
+    <div class="title"><strong>NMIT SparkLab Designathon 2025</strong></div>
+    <p>Participated in 24hr Designathon, Built <strong>Astitva</strong>, a platform connecting rural artisans directly
+      with buyers, reducing middlemen and increasing profits.</p>
+    <ul>
+      <li>Implemented KYC/badging and QR-based product verification to ensure authenticity and build trust.</li>
+    </ul>
+    <div class="title"><strong>Hack4Future</strong> | Christ Academy Institute For Advanced Studies</div>
+    <ul>
+      <li>Participated in national level hackathon, built AI-powered mental health chatbot.</li>
+      <li>Provides instant, private, and accessible emotional support.</li>
+      <li>Acts as a friendly listener and guide.</li>
+    </ul>
+
+    <h2>Certifications &amp; Competitive Programming</h2>
+    <div class="title"><strong>Generative AI Professional | Oracle (Certified)</strong></div>
+    <p>In recognition of the professional excellence, certification in Generative Artificial Intelligence, demonstrating
+      knowledge of core concepts and practical applications of generative AI technologies.</p>
+    <div class="title"><strong>Python for Data Science | Infosys | Springboard</strong></div>
+    <p>Successfully completed the Data science with python.</p>
+    <div class="title"><strong>LeetCode |</strong> <a href="https://leetcode.com/u/MDS_4/"><strong>MDS_4</strong></a>
+      Ongoing</div>
+    <ul>
+      <li>Actively solving DSA problems focused on arrays, strings, recursion, trees, and dynamic programming patterns.
+      </li>
+    </ul>
+
+  </div>
+</body>
+
+</html>
